@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GJ ACADEMY — Organizador de Treinos</title>
+<link rel="icon" type="image/png" sizes="512x512" href="img/GJ-logo-fundo-preto.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <span class="brand">GJ <b>ACADEMY</b></span>
+  <button id="burger" class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+</header>
+<nav id="menu" class="menu" aria-label="Navegação"></nav>
+<div id="shade" class="shade"></div>
+<div class="wrap">
+  <h1>GJ <span>ACADEMY</span></h1>
+  <p class="sub">Monte sua semana de treino e envie para o seu WhatsApp.</p>
+
+  <h2 id="sec-dias"><b>1.</b> Escolha os dias da semana</h2>
+  <div class="days" id="days"></div>
+
+  <h2><b>2.</b> Adicione os exercícios <small>(vão para todos os dias selecionados)</small></h2>
+  <div id="groups"></div>
+
+  <h2><b>3.</b> Seu treino</h2>
+  <div class="order neon" id="order"></div>
+
+  <h2 id="sec-enviar"><b>4.</b> Enviar para o WhatsApp</h2>
+  <form id="f">
+    <input id="tel" type="tel" inputmode="numeric" placeholder="Seu WhatsApp com DDD (ex: 11 91234-5678)" required>
+    <button class="btn" type="submit">Enviar treino no WhatsApp</button>
+  </form>
+  <div id="msg"></div>
+</div>
+<script type="module" src="/script.js"></script>
+</body>
+</html>
